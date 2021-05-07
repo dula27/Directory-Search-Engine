@@ -2,18 +2,6 @@
 
 All the documentation for the program
 
-Question (a):If we have N documents, and document Diconsists of miwords, then how long does this simple solution take to search for a query consisting of K words. Give your answer in big O notation. A more efficient solution can be constructed using other data structures.
-`search O(n) where n is total number of words in all documents, given that large linked list contains all words from all documents`
-
-Question (b):If we assume that the hash function maps words evenly across the buckets (i.e., each bucket gets the same number of words), then what is the time complexity (big O notation) of this improved solution? Use the same parameters as Question (a) for the size of each document and size of the query set.
-`search O(1*n) where n is number of words in a bucket`
-
-Question (c)why does this leadto a more efficient search process?
-`It does not have to iterate through words that do not affect the idf relevancy of the search engine, this saves time in terms of Big-O.`
-
-Question (d):Which of the two approaches is more efficient in terms of removing stop words and why.
-`The second approach of hashtree is more efficient because the main chain of words is not repeated, it has to only search for word once and then it can move on to the other branch to look for word frequency. Removing the word from hashtree will result in the whole branch to be removed, however in first approach same word will have to be removed for all documents.`
-
 # Makefile
 
 Tested on:
